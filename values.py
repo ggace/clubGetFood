@@ -26,4 +26,4 @@ bgcolor = (255,255,255)
 
 #위치
 smallNotice = (0,0)
-bigNotice = (values.size[0]/2, values.size[1]/2)
+bigNotice = (size[0]/2, size[1]/2)

@@ -95,9 +95,9 @@ fallSpeed = values.fallSpeed
 scoreText, scoreTextRect = getTextByTop(f'SCORE : {score}', 20, values.textColor,values.bgcolor, values.smallNotice[0], values.smallNotice[1])
 maxscoreText, maxscoreTextRect = getTextByTop(f'MAX SCORE : {maxScore}', 20, values.textColor,values.bgcolor, values.smallNotice[0], values.smallNotice[1]+20)
 turnText, turnTextRect = getTextByTop(f'TURN : {turn}', 20, values.textColor,values.bgcolor, values.smallNotice[0], values.smallNotice[1]+40)
-maxscoreLargeText, maxscoreLargeTextRect = getTextByCenter(f'MAX SCORE : {maxScore}', 50, values.textColor,values.bgcolor, values.size[0]/2, values.size[1]/2-25)
-turnLargeText, turnLargeTextRect = getTextByCenter(f'TURN : {turn}', 50, values.textColor,values.bgcolor, values.size[0]/2, values.size[1]/2+25)
-restartLargeText, restartLargeTextRect = getTextByCenter(f'PRESS SPACE BAR TO RESTART', 20, values.textColor,values.bgcolor, values.size[0]/2, values.size[1]/2+60)
+maxscoreLargeText, maxscoreLargeTextRect = getTextByCenter(f'MAX SCORE : {maxScore}', 50, values.textColor,values.bgcolor, values.bigNotice[0], values.bigNotice[1]-25)
+turnLargeText, turnLargeTextRect = getTextByCenter(f'TURN : {turn}', 50, values.textColor,values.bgcolor, values.bigNotice[0], values.bigNotice[1]+25)
+restartLargeText, restartLargeTextRect = getTextByCenter(f'PRESS SPACE BAR TO RESTART', 20, values.textColor,values.bgcolor, values.bigNotice[0], values.bigNotice[1]+60)
 
 #확률 작업
 percentages = []
@@ -195,8 +195,8 @@ while not(finish):
     #게임 오버
     else:
         #text처리
-        maxscoreLargeText, maxscoreLargeTextRect = getTextByCenter(f'MAX SCORE : {maxScore}', 50,values.textColor,values.bgcolor, values.size[0]/2, values.size[1]/2-25)
-        turnLargeText, turnLargeTextRect = getTextByCenter(f'TURN : {turn}', 50, values.textColor,values.bgcolor, values.size[0]/2, values.size[1]/2+25)
+        maxscoreLargeText, maxscoreLargeTextRect = getTextByCenter(f'MAX SCORE : {maxScore}', 50,values.textColor,values.bgcolor, values.bigNotice[0], values.bigNotice[1]-25)
+        turnLargeText, turnLargeTextRect = getTextByCenter(f'TURN : {turn}', 50, values.textColor,values.bgcolor, values.bigNotice[0], values.bigNotice[1]+25)
         screen.blit(maxscoreLargeText, maxscoreLargeTextRect) 
         screen.blit(turnLargeText, turnLargeTextRect) 
         screen.blit(restartLargeText, restartLargeTextRect) 
